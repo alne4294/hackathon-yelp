@@ -38,6 +38,6 @@ db.business.find({'categories': {$in :[ "Active Life", "Fitness & Instruction", 
 
 ## D3 Visualization
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](d3.png?raw=true)
 
 {{a short explanation of this visualization}}

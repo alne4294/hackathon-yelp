@@ -75,20 +75,22 @@ app.get('/q2/:format', function(req, res){
 });
 
 
-app.get('/d3/:format', function(req, res){
-    var question = "Question?"; // TODO
+app.get('/q3/:format', function(req, res){
+    var question = "What are the businesses with the lowest rating?";
     var query = {}; // TODO
-    var projection = {};    // TODO
+    var projection = { name:1, stars:1};    // TODO
     var collection = 'business';     // TODO
-    console.log(req.params);
     db.collection(collection)  
-        .find(query, projection)
+        .find(query, projection).sort({stars:1})
         .limit(10)  // TODO
         .toArray(function(e, items){
         if (req.params['format'] == 'json'){
             res.status(200).send(items);
-        }else if (req.params['format'] == 'd3'){
-            res.status(200).render('custom', {data: items});
+        }else if (req.params['format'] == 'html'){
+            var answer = items.map(function(d){
+                return d['name'];   // TODO
+            }).join(" and ");   // TODO
+            res.status(200).render('answer', {question: question, answer: answer});
         }
     });
 });

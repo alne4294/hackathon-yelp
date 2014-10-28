@@ -38,7 +38,55 @@
     </head>
     <body>      
         <script type="text/javascript">
-            // use business.ejs as the starter code
+                        var w = 800;
+            var h = 200;                    
+            var margin = 10;
+           
+            var dataset = <%- JSON.stringify(data) %>;
+            
+            var svg = d3.select("body")          
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+                return "<strong>Name:</strong> <span style='color:red'>" + d['name'] + "</span>";
+              })            
+
+            svg.call(tip);              
+
+            var yScale = d3.scale.linear()
+                .domain([0, d3.max(dataset.map(function(d) {
+                  return d["stars"];
+                }))])
+                .range([margin, h - margin]);
+ 
+            var xScale = d3.scale.linear()
+                .domain([0, d3.max(dataset.map(function(d) {
+                  return d["review_count"];
+                }))])
+                .range([margin, w - margin]);                         
+ 
+            var g = svg.selectAll("g")
+              .data(dataset)
+              .enter()
+              .append("g")               
+              .attr("transform", function(d){
+                    return "translate(" + xScale(d["review_count"])
+                         + "," + yScale(d["stars"]) + ")"; 
+              })
+              .on('mouseover', tip.show)
+              .on('mouseout', tip.hide)
+
+
+            g.append("circle")
+             .attr("r",5)
+             .attr("cx",0)
+             .attr("cy",0)
+             .attr("fill","red")
 
         </script>
     </body>

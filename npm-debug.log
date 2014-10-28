@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'monogskin' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.31
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'monogskin', null ]
+7 verbose cache add spec="monogskin" args=["monogskin",null]
+8 verbose parsed spec { raw: 'monogskin',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: 'monogskin',
+8 verbose parsed spec   rawSpec: '',
+8 verbose parsed spec   spec: '*',
+8 verbose parsed spec   type: 'range' }
+9 verbose parsed spec { raw: 'monogskin',
+9 verbose parsed spec   scope: null,
+9 verbose parsed spec   name: 'monogskin',
+9 verbose parsed spec   rawSpec: '',
+9 verbose parsed spec   spec: '*',
+9 verbose parsed spec   type: 'range' }
+10 verbose addNamed [ 'monogskin', '*' ]
+11 verbose addNamed [ null, '*' ]
+12 silly lockFile 2a6c836f-monogskin monogskin@*
+13 verbose lock monogskin@* /Users/antsankov/.npm/2a6c836f-monogskin.lock
+14 silly addNameRange { name: 'monogskin', range: '*', hasData: false }
+15 verbose mapToRegistry name monogskin
+16 verbose mapToRegistry uri https://registry.npmjs.org/monogskin
+17 verbose request on initialization, where is /monogskin
+18 verbose request after pass 1, where is /monogskin
+19 verbose request url raw /monogskin
+20 verbose request resolving registry [ 'https://registry.npmjs.org/', './monogskin' ]
+21 verbose request after pass 2, where is https://registry.npmjs.org/monogskin
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 18:59:32
+24 verbose request id 39be30a8b9fce1b1
+25 http request GET https://registry.npmjs.org/monogskin
+26 http 404 https://registry.npmjs.org/monogskin
+27 verbose headers { date: 'Tue, 28 Oct 2014 00:59:32 GMT',
+27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '52',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   'x-served-by': 'cache-dfw1834-DFW',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1414457971.793074,VS0,VE266',
+27 verbose headers   'keep-alive': 'timeout=10, max=50',
+27 verbose headers   connection: 'Keep-Alive' }
+28 silly registry.get cb [ 404,
+28 silly registry.get   { date: 'Tue, 28 Oct 2014 00:59:32 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '52',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-dfw1834-DFW',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1414457971.793074,VS0,VE266',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly lockFile 2a6c836f-monogskin monogskin@*
+30 silly lockFile 2a6c836f-monogskin monogskin@*
+31 verbose stack Error: 404 Not Found: monogskin
+31 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:259:14)
+31 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+31 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+31 verbose stack     at Request.emit (events.js:98:17)
+31 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+31 verbose stack     at Request.emit (events.js:117:20)
+31 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+31 verbose stack     at IncomingMessage.emit (events.js:117:20)
+31 verbose stack     at _stream_readable.js:943:16
+31 verbose stack     at process._tickCallback (node.js:419:13)
+32 verbose statusCode 404
+33 verbose pkgid monogskin
+34 verbose cwd /Users/antsankov/Google Drive/semester_5/bigData/hackathons/hackathon-yelp
+35 error Darwin 14.0.0
+36 error argv "node" "/usr/local/bin/npm" "install" "monogskin"
+37 error node v0.10.31
+38 error npm  v2.0.0
+39 error code E404
+40 error 404 Not Found: monogskin
+40 error 404
+40 error 404 'monogskin' is not in the npm registry.
+40 error 404 You should bug the author to publish it (or use the name yourself!)
+40 error 404 It was specified as a dependency of 'myapp'
+40 error 404
+40 error 404 Note that you can also install from a
+40 error 404 tarball, folder, http url, or git url.
+41 verbose exit [ 1, true ]

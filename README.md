@@ -19,12 +19,12 @@
 
 ## Question 1
 
-![q1](screenshot.png?raw=true)
+![q1](Q1.png?raw=true)
 
 
 ## Question 2
 
-![q2](screenshot.png?raw=true) 
+![q2](Q2.png?raw=true) 
 
 # Objective 4. Visualize
 

@@ -16,6 +16,8 @@
 ![q1](Q1.png?raw=true)
 * [List all the 24/7 restaurants](https://github.com/CSCI-4830-002-2014/hackathon-yelp/issues/8)
 ![q2](Q2.png?raw=true) 
+* [What are the highest rated dance studios in New York?](https://github.com/CSCI-4830-002-2014/hackathon-yelp/issues/16)
+db.business.find({'categories': {$in :[ "Active Life", "Fitness & Instruction", "Trainers", "Boot Camps" ]}, 'city' : 'New York'},{'name':1})
 
 # Objective 3. Serve
 

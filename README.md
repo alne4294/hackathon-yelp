@@ -13,18 +13,20 @@
 # Objective 2. Query
 
 * [How many people in the DB have your name?](https://github.com/CSCI-4830-002-2014/hackathon-yelp/issues/12)
+![q1](Q1.png?raw=true)
 * [List all the 24/7 restaurants](https://github.com/CSCI-4830-002-2014/hackathon-yelp/issues/8)
+![q2](Q2.png?raw=true) 
 
 # Objective 3. Serve
 
 ## Question 1
 
-![q1](Q1.png?raw=true)
+![q1](S1.png?raw=true)
 
 
 ## Question 2
 
-![q2](Q2.png?raw=true) 
+![q2](S2.png?raw=true) 
 
 # Objective 4. Visualize
 

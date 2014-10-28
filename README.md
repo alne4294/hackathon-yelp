@@ -12,7 +12,7 @@
 
 # Objective 2. Query
 
-* [Question 1](link-to-an-issue)
+* [How many people in the DB have your name?](https://github.com/CSCI-4830-002-2014/hackathon-yelp/issues/12)
 * [Question 2](link-to-an-issue)
 
 # Objective 3. Serve

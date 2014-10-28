@@ -1,10 +1,10 @@
 # Team Members
 
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
-* [name-of-a-team-member](URL to this member's github account)
+* [Alexia Newgord](github.com/alne4294)
+* [Jake Charland](github.com/jakecharland)
+* [Nicklas Fejes](github.com/nfejes)
+* [Alex Tsankov](github.com/antsankov)
+* [Jake White](github.com/jakewhite8)
 
 # Objective 1. Ingest
 
